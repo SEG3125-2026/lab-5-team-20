@@ -1,0 +1,48 @@
+h1{
+	color:#8C7355;
+}
+
+form{
+	display: none;
+	margin-left:25%;
+	width: 50%;
+	border: solid 3px;
+	border-radius: 8px;
+	padding:5px ;
+}
+
+summary{
+	color: #8C7355;
+}
+
+details{
+	border: black solid 1px;
+	border-radius: 8px;
+	padding:3px;
+}
+
+.btn-primary{
+	background-color: #3A2314; 
+	border: solid 2px;
+	padding: 7px;
+	border-radius: 8px;
+	color: floralwhite;
+}
+
+.btn-primary:hover{
+	color: black;
+}
+
+#submitForm, #resetForm{
+	border: solid black 2px;
+	border-radius: 8px;
+	background-color: #3A2314;
+	color: floralwhite;
+}
+
+#submitForm:hover, #resetForm:hover{
+	color:black;
+}
+
+
+
