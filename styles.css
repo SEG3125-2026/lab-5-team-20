@@ -21,6 +21,28 @@ details{
 	padding:3px;
 }
 
+
+.navBar {
+  overflow: hidden;
+  background-color: #8C7355;
+}
+.navBar a {
+  float: left;
+  color: #8C7355;
+  background-color: #F9EFE4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navBar a:hover {
+  background-color: #594936;
+  color: floralwhite;
+}
+
+
+
 .btn-primary{
 	background-color: #3A2314; 
 	border: solid 2px;
