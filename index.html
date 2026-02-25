@@ -74,7 +74,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Olivia</h5>
 							<p class="card-text">Junior Hair Stylist</p>
-							<button class="btn-primary" onclick="bookStylist('olivia')">Select</button>
+							<button class="btn-primary">View</button>
 						</div>
 					</div>
 					<div class="card border-dark p-2" style="width: 15rem; background-color: #F9EFE4">
@@ -82,7 +82,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Christina</h5>
 							<p class="card-text">Senior Colour Specialist</p>
-							<button class="btn-primary" onclick="bookStylist('christina')">Select</button>
+							<button class="btn-primary">View</button>
 						</div>
 					</div>
 					<div class="card border-dark p-2" style="width: 15rem; background-color: #F9EFE4">
@@ -90,7 +90,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Vivianne</h5>
 							<p class="card-text">Senior Hair Stylist</p>
-							<button class="btn-primary" onclick="bookStylist('vivianne')">Select</button>
+							<button class="btn-primary">View</button>
 						</div>
 					</div>
 					<div class="card border-dark p-2" style="width: 15rem; background-color: #F9EFE4">
@@ -98,14 +98,14 @@
 						<div class="card-body">
 							<h5 class="card-title">Mark</h5>
 							<p class="card-text">Junior Colour Specialist</p>
-							<button class="btn-primary" onclick="bookStylist('mark')">Select</button>
+							<button class="btn-primary">View</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<form id ="infoForm">
+		<form id ="infoForm" onsubmit="bookEverything(event)">
 			<p>Please fill out your personal information below:</p> 
 			<details>
 				<summary>Why are we collecting this data?</summary>
@@ -133,9 +133,38 @@
 			<input type="text" name="notes" id="notes">
 			<br><br>
 
-			<input type="submit" value="Submit" id="submitForm" onclick="bookEverything()">
+			<h4>Payment Information</h4>
+			<label for="cardName">Cardholder Name:</label>
+			<input type="text" name="cardName" id="cardName" required>
+			<br><br>
+
+			<label for="cardNumber">Card Number:</label>
+			<input type="text" id="cardNumber" name="cardNumber"
+			pattern="[0-9]{16}" placeholder="1234567812345678" required>
+			<br><br>
+
+			<label for="expiry">Expiry Date:</label>
+			<input type="month" id="expiry" name="expiry" required>
+			<br><br>
+
+			<label for="cvv">CVV:</label>
+			<input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="123" required>
+			<br><br>
+
+			<input type="submit" value="Submit" id="submitForm">
 			<br><br>
 			<input type="reset" value="Reset" id="resetForm">
+
+			<label for ="professional"> Choose your Stylist:
+			<select name="professional" id="professional" required>
+				<option value="">--Select a stylist--</option>
+				<option value="Olivia">Olivia - Junior Hair Stylist</option>
+				<option value="Christina">Christina - Senior Colour Specialist</option>
+				<option value="Vivianne">Vivianne - Senior Hair Stylist</option>
+				<option value="Mark">Mark - Junior Colour Specialist</option>
+			</select>
+			<br><br>
+			</label>
 		</form>
 		
 
