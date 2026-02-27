@@ -21,7 +21,6 @@ details{
 	padding:3px;
 }
 
-
 .navBar {
   overflow: hidden;
   background-color: #8C7355;
@@ -40,7 +39,6 @@ details{
   background-color: #594936;
   color: floralwhite;
 }
-
 
 
 .btn-primary{
@@ -65,6 +63,8 @@ details{
 #submitForm:hover, #resetForm:hover{
 	color:black;
 }
+
+
 
 
 

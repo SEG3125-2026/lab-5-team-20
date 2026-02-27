@@ -12,7 +12,7 @@
 	<body>
 		<header>
 			<div class ="navBar">
-				<a href="#services">Services</a>
+  				<a href="#services">Services</a>   
 				<a href="#stylists">Stylists</a>
 			</div>
 			<div class="d-flex justify-content-center m-5 ">
@@ -28,13 +28,20 @@
 		</header>
 		<section >
 			<div id="services">
-				<p class="display-3 text-center">Our Services</p>
+ 			 <div class="d-flex align-items-center justify-content-center">
+    			<p class="display-3 me-3 mb-0">Our Services</p>
+    			<img id="serviceLogo" src="images/longhair.png" class="img-fluid mt-2" style="width:80px; height:80px" alt="longhair blowing in the wind">
+  			</div>
+
 				<div class="d-flex justify-content-between p-2 m-5">
 					<!-- Card implementation inspired by bootstrap tutorial: https://getbootstrap.com/docs/4.0/components/card/ -->
 					<div class="card border-dark p-2" style="width: 15rem; background-color: #F9EFE4">
 						<img class="card-img-top" src="images/blowout.png" style="width:auto; height: 250px" alt="Blowout Hairstyle">
 						<div class="card-body">
-							<h5 class="card-title">Blowout</h5>
+							<div class="d-flex align-items-center justify-content-center">
+								<h5 class="card-title">Blowout</h5>
+    							<img id="hairdryerlogo" src="images/hair-dryer.png" class="img-fluid mt-2" style="width:80px; height:80px" alt="hair dryer">
+  							</div>
 							<p class="card-text">$99<br>1hr 20<br>Included: Wash and blowdry styling</p>
 							<button class="btn-primary" onclick="bookService('blowout')">Select</button>
 						</div>
@@ -42,7 +49,10 @@
 					<div class="card border-dark p-2" style="width: 15rem; background-color: #F9EFE4">
 						<img class="card-img-top" src="images/cutandstyle.png" style="width:auto; height: 250px" alt="Styled hair after cut">
 						<div class="card-body">
-							<h5 class="card-title">Cut and Style</h5>
+							<div class="d-flex align-items-center justify-content-center">
+								<h5 class="card-title">Cut and Style</h5>
+    							<img id="haircutLogo" src="images/woman-hair-cut.svg" class="img-fluid mt-2" style="width:80px; height:80px" alt="hair being cut">
+  							</div>
 							<p class="card-text">$139<br>2hr<br>Included: Wash, blowdry, cut, and style</p>
 							<button class="btn-primary" onclick="bookService('cut-and-style')">Select</button>
 						</div>
@@ -50,7 +60,10 @@
 					<div class="card border-dark p-2" style="width: 15rem; background-color: #F9EFE4">
 						<img class="card-img-top" src="images/wash.png" style="width:auto; height: 250px" alt="Person getting their hair washed">
 						<div class="card-body">
-							<h5 class="card-title">Wash and Style</h5>
+							<div class="d-flex align-items-center justify-content-center">
+								<h5 class="card-title">Wash and Style</h5>
+    							<img id="washLogo" src="images/hairwash.png" class="img-fluid mt-2" style="width:80px; height:80px" alt="hair dryer">
+  							</div>
 							<p class="card-text">$88<br>1hr 45<br>Included: Wash, treatment, and styling</p>
 							<button class="btn-primary" onclick="bookService('wash-and-style')">Select</button>
 						</div>
@@ -58,7 +71,10 @@
 					<div class="card border-dark p-2" style="width: 15rem; background-color: #F9EFE4">
 						<img class="card-img-top" src="images/haircolouring.png" style="width:auto; height: 250px" alt="Highlights Hairstyle">
 						<div class="card-body">
-							<h5 class="card-title">Highlights</h5>
+							<div class="d-flex align-items-center justify-content-center">
+								<h5 class="card-title">Highlights</h5>
+    							<img id="highlightsLogo" src="images/highlights.png" class="img-fluid mt-2" style="width:80px; height:80px" alt="hair dryer">
+  							</div>
 							<p class="card-text">$247<br>3hr 30<br>Included: Wash, blowdry and colour</p>
 							<button class="btn-primary" onclick="bookService('highlights')">Select</button>
 						</div>
@@ -66,7 +82,10 @@
 				</div>
 			</div>
 			<div id="stylists">
-				<p class="display-3 text-center" >Meet our Stylists</p>
+				<div class="d-flex align-items-center justify-content-center">
+					<p class="display-3 text-center" >Meet our Stylists</p>
+    				<img id="stylistLogo" src="images/stylistLogo.png" class="img-fluid mt-2" style="width:80px; height:80px" alt="hair stylist helping a client">
+  				</div>
 				<div class="d-flex justify-content-between p-2 m-5">
 					<!-- Card implementation inspired by bootstrap tutorial: https://getbootstrap.com/docs/4.0/components/card/ -->
 					<div class="card border-dark p-2" style="width: 15rem; background-color: #F9EFE4">
@@ -133,7 +152,10 @@
 			<input type="text" name="notes" id="notes">
 			<br><br>
 
-			<h4>Payment Information</h4>
+			<div class="d-flex align-items-center">
+					<h4>Payment Information</h4>
+    				<img id="paymentLogo" src="images/creditcard.png" class="img-fluid mt-2" style="width:40px; height:40px" alt="credit card clipart">
+  				</div>
 			<label for="cardName">Cardholder Name:</label>
 			<input type="text" name="cardName" id="cardName" required>
 			<br><br>
