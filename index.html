@@ -132,51 +132,46 @@
 				</p>
 			</details>
 			<br>
-			<label for="fname">First Name: </label>
+			<label for="fname" class="lead">First Name: </label>
 			<input type="text" name="fname" id="fname" required>
 			<br><br>
 
-			<label for="lname">Last Name: </label>
+			<label for="lname" class="lead">Last Name: </label>
 			<input type="text" name="lname" id="lname" required>
 			<br><br>
 
-			<label for="clientEmail">Email:</label>
+			<label for="clientEmail" class="lead">Email:</label>
 			<input type="email" name="clientEmail" id="clientEmail" required>
 			<br><br>
 
-			<label for="phone">Phone Number:</label>
+			<label for="phone" class="lead">Phone Number:</label>
 			<input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
 			<br><br>
 
-			<label for="notes">Any other notes? Eg. Allergies</label>
+			<label for="notes" class="lead">Any other notes? Eg. Allergies</label>
 			<input type="text" name="notes" id="notes">
 			<br><br>
 
 			<div class="d-flex align-items-center">
-					<h4 class="display-4 text-center">Payment Information</h4>
+					<h4 class="lead">Payment Information</h4>
     				<img id="paymentLogo" src="images/creditcard.png" class="img-fluid mt-2" style="width:40px; height:40px" alt="credit card clipart">
   				</div>
-			<label for="cardName">Cardholder Name:</label>
+			<label for="cardName" class="lead">Cardholder Name:</label>
 			<input type="text" name="cardName" id="cardName" required>
 			<br><br>
 
-			<label for="cardNumber">Card Number:</label>
+			<label for="cardNumber" class="lead">Card Number:</label>
 			<input type="text" id="cardNumber" name="cardNumber"
 			pattern="[0-9]{16}" placeholder="1234567812345678" required>
 			<br><br>
 
-			<label for="expiry">Expiry Date:</label>
+			<label for="expiry" class="lead">Expiry Date:</label>
 			<input type="month" id="expiry" name="expiry" required>
 			<br><br>
 
-			<label for="cvv">CVV:</label>
+			<label for="cvv" class="lead">CVV:</label>
 			<input type="password" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="123" required>
 			<br><br>
-
-			<input type="submit" value="Submit" id="submitForm">
-			<br><br>
-			<input type="reset" value="Reset" id="resetForm">
-
 			<label for ="professional" class="lead">
 			Choose your Stylist:
 			<select name="professional" id="professional" required>
@@ -190,6 +185,10 @@
 			</label>
 			<label for = "pickDate" class="lead">Select from the availiable dates:</label>
 			<input type="date" id="pickDate" name="pickDate" min="2026-03-01" max="2026-08-28">
+			<br><br>
+			<input type="submit" value="Submit" id="submitForm">
+			<br><br>
+			<input type="reset" value="Reset" id="resetForm">
 		</form>
 		
 
