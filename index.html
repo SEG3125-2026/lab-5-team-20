@@ -154,10 +154,10 @@
 			<input type="text" name="notes" id="notes">
 			<br><br>
 
-			<div class="d-flex align-items-center">
+			<div class="d-flex align-items-start">
 					<h4 class="lead">Payment Information</h4>
     				<img id="paymentLogo" src="images/creditcard.png" class="img-fluid mt-2" style="width:40px; height:40px" alt="credit card clipart">
-  				</div>
+
 			<label for="cardName" class="lead">Cardholder Name:</label>
 			<input type="text" name="cardName" id="cardName" required>
 			<br><br>
@@ -185,17 +185,17 @@
 			</select>
 			<br><br>
 			</label>
-			<!-- Date picker implementation inspired by following tutorial: httpss://www.geeksforgeeks.org/jquery/jquery-ui-date-picker/ -->
+			<!-- Date picker implementation inspired by following tutorial: https://www.geeksforgeeks.org/jquery/jquery-ui-date-picker/ -->
 			<label for="pickdate" class="lead" id="pd">Date:</label>
 			<input type="text" id="pickdate">
 				<script>
 					$(function(){$("#pickdate").datepicker({
 						firstDay:1,
 						dateFormat: 'dd-mm-yy',
-						defaultDate:'03-01-2026',
 						changeMonth: true,
 						maxDate: '+4m',
 						minDate: '+1',
+						// No sundays implementation using following stack code: https://stackoverflow.com/questions/19442737/jquery-datepicker-calendar-how-to-disable-sunday-date-or-any-day
 						beforeShowDay: function(date){
 							var day = date.getDay();
 							return [day != 0, ''];
@@ -203,9 +203,11 @@
 						});
 					});
 				</script>
+			<br><br>
 			<input type="submit" value="Submit" id="submitForm">
 			<br><br>
 			<input type="reset" value="Reset" id="resetForm">
+			</div>
 		</form>
 		
 
