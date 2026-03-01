@@ -126,7 +126,7 @@
 			</div>
 		</section>
 
-		<form id ="infoForm" class="text-start" onsubmit="bookEverything(event)">
+		<form id ="infoForm" onsubmit="bookEverything(event)">
 			<p class="lead">Please fill out your personal information below:</p> 
 			<details>
 				<summary class="lead">Why are we collecting this data?</summary>
@@ -186,8 +186,9 @@
 			<br><br>
 			</label>
 			<!-- Date picker implementation inspired by following tutorial: https://www.geeksforgeeks.org/jquery/jquery-ui-date-picker/ -->
-			<label for="pickdate" class="lead" id="pd">Date:</label>
-			<input type="text" id="pickdate">
+			<label for="pickdate" class="lead" id="pd">
+			Date:</label>
+			<input type="text" id="pickdate" required>
 				<script>
 					$(function(){$("#pickdate").datepicker({
 						firstDay:1,
