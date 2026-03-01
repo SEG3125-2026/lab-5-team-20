@@ -186,24 +186,26 @@
 			<br><br>
 			</label>
 			<!-- Date picker implementation inspired by following tutorial: https://www.geeksforgeeks.org/jquery/jquery-ui-date-picker/ -->
-			<label for="pickdate" class="lead" id="pd">
-			Date:</label>
-			<input type="text" id="pickdate" required>
-				<script>
-					$(function(){$("#pickdate").datepicker({
-						firstDay:1,
-						dateFormat: 'dd-mm-yy',
-						changeMonth: true,
-						maxDate: '+4m',
-						minDate: '+1',
-						// No sundays implementation using following stack code: https://stackoverflow.com/questions/19442737/jquery-datepicker-calendar-how-to-disable-sunday-date-or-any-day
-						beforeShowDay: function(date){
-							var day = date.getDay();
-							return [day != 0, ''];
-						}
+			<div class="class text-start">
+				<label for="pickdate" class="lead">
+				Date:</label>
+				<input type="text" id="pickdate" required>
+					<script>
+						$(function(){$("#pickdate").datepicker({
+							firstDay:1,
+							dateFormat: 'dd-mm-yy',
+							changeMonth: true,
+							maxDate: '+4m',
+							minDate: '+1',
+							// No sundays implementation using following stack code: https://stackoverflow.com/questions/19442737/jquery-datepicker-calendar-how-to-disable-sunday-date-or-any-day
+							beforeShowDay: function(date){
+								var day = date.getDay();
+								return [day != 0, ''];
+							}
+							});
 						});
-					});
-				</script>
+					</script>
+			</div>
 			<br><br>
 			<input type="submit" value="Submit" id="submitForm">
 			<br><br>
