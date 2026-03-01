@@ -49,8 +49,11 @@ details{
 	color: floralwhite;
 }
 
-.btn-primary:hover{
-	color: black;
+.btn-primary:hover, 
+#submitForm:hover, 
+#resetForm:hover{
+	background-color: floralwhite;
+	color: #3A2314;
 }
 
 #submitForm, #resetForm{
@@ -59,12 +62,3 @@ details{
 	background-color: #3A2314;
 	color: floralwhite;
 }
-
-#submitForm:hover, #resetForm:hover{
-	color:black;
-}
-
-
-
-
-
