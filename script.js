@@ -19,12 +19,3 @@ function bookEverything(){
 	alert("Your service has been booked.");
 
 }
-
-function datePicker(){
-	const dateElem = document.getElementById("pickDate")
-	const date = new Date();
-	var date_conversion = date.toDateString();
-
-	dateElem.innerHTML(`${date_conversion}`)
-
-}
