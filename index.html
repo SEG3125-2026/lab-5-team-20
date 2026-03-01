@@ -186,20 +186,18 @@
 			<br><br>
 			</label>
 			<!-- Date picker implementation inspired by following tutorial: httpss://www.geeksforgeeks.org/jquery/jquery-ui-date-picker/ -->
-			<label for="pickdate" class="lead text-start">Date:</label>
+			<label for="pickdate" class="lead align-items-start">Date:</label>
 			<input type="text" id="pickdate">
 				<script>
-					$(document).ready(function(){
-						$(function(){$("#pickdate").datepicker({
-							firstDay:1,
-							dateFormat: 'dd-mm-yy',
-							defaultDate:'03-01-2026',
-							changeMonth: true,
-							maxDate: '+4m',
-							minDate: '+1'
-							});
+					$(function(){$("#pickdate").datepicker({
+						firstDay:1,
+						dateFormat: 'dd-mm-yy',
+						defaultDate:'03-01-2026',
+						changeMonth: true,
+						maxDate: '+4m',
+						minDate: '+1'
 						});
-					})
+					});
 				</script>
 			<input type="submit" value="Submit" id="submitForm">
 			<br><br>
