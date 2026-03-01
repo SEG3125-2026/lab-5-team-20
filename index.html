@@ -126,7 +126,7 @@
 			</div>
 		</section>
 
-		<form id ="infoForm" onsubmit="bookEverything(event)">
+		<form id ="infoForm" class="text-start" onsubmit="bookEverything(event)">
 			<p class="lead">Please fill out your personal information below:</p> 
 			<details>
 				<summary class="lead">Why are we collecting this data?</summary>
@@ -154,10 +154,10 @@
 			<input type="text" name="notes" id="notes">
 			<br><br>
 
-			<div class="d-flex align-items-start">
+			<div class="d-flex align-items-center">
 					<h4 class="lead">Payment Information</h4>
     				<img id="paymentLogo" src="images/creditcard.png" class="img-fluid mt-2" style="width:40px; height:40px" alt="credit card clipart">
-
+				</div>
 			<label for="cardName" class="lead">Cardholder Name:</label>
 			<input type="text" name="cardName" id="cardName" required>
 			<br><br>
@@ -207,7 +207,6 @@
 			<input type="submit" value="Submit" id="submitForm">
 			<br><br>
 			<input type="reset" value="Reset" id="resetForm">
-			</div>
 		</form>
 		
 
