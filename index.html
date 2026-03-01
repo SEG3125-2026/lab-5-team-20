@@ -189,15 +189,17 @@
 			<label for="pickdate" class="lead text-start">Date:</label>
 			<input type="text" id="pickdate">
 				<script>
-					$(function(){$("#pickdate").datepicker({
-						firstDay:1,
-						dateFormat: 'dd-mm-yy',
-						defaultDate:'03-01-2026',
-						changeMonth: true,
-						maxDate: '+4m',
-						minDate: '+1'
-					});
-				});
+					$(document).ready(function(){
+						$(function(){$("#pickdate").datepicker({
+							firstDay:1,
+							dateFormat: 'dd-mm-yy',
+							defaultDate:'03-01-2026',
+							changeMonth: true,
+							maxDate: '+4m',
+							minDate: '+1'
+							});
+						});
+					})
 				</script>
 			<input type="submit" value="Submit" id="submitForm">
 			<br><br>
