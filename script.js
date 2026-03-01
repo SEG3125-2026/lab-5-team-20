@@ -19,5 +19,3 @@ function bookEverything(){
 	alert("Your service has been booked.");
 
 }
-
-
